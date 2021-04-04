@@ -1,5 +1,7 @@
 # JiraQueryLanguage
 Documentation for advanced queries of the JIRA Query Language to create useful dashboards in Confluence
+## Task Tracker Dashboard
+![Screenshot](blogpics/dashboard.png)
 
 
 ![Screenshot](blogpics/OpenPool.png)
