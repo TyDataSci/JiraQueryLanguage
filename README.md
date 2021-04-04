@@ -10,7 +10,7 @@ OR
 duedate <= 0d AND assignee IN ("MNGR1") AND status IN ("Open", "In Progress")
 ```
 ![Screenshot](blogpics/Employee1.png)
-``SQL
+```SQL
 duedate < 1d AND duedate >= 0d AND assignee IN ("EMP01") AND project = "Agency Services – Business Unit"
 OR
 assignee IN ("EMP01") AND project = "Agency Services – Business Unit" AND status = "In Progress" 
