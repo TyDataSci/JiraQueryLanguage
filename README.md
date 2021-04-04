@@ -11,6 +11,8 @@ duedate < 1d AND duedate >= 0d AND assignee IN ("MNGR1") AND project = "Agency S
 OR
 duedate <= 0d AND assignee IN ("MNGR1") AND status IN ("Open", "In Progress")
 ```
+
+## Employee 1's Task Pool, Due Today
 ![Screenshot](blogpics/Employee1.png)
 ```SQL
 duedate < 1d AND duedate >= 0d AND assignee IN ("EMP01") AND project = "Agency Services – Business Unit"
