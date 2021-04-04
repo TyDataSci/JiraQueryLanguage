@@ -21,3 +21,4 @@ duedate <= 0d AND assignee IN ("EMP01") AND status = "Open"
 OR
 assignee IN ("EMP01") AND resolution = "Unresolved" AND updatedDate <= 0d AND updatedDate > -1d AND status IN ("Blocked", "Done")
 ```
+
