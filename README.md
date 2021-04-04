@@ -2,7 +2,7 @@
 Documentation for advanced queries of the JIRA Query Language to create useful dashboards in Confluence
 
 
-![Screenshot](blogpics/OpenTasks.png)
+![Screenshot](blogpics/OpenPool.png)
 ## Open Task Pool, Due Today
 ```SQL
 duedate < 1d AND duedate >= 0d AND assignee IN ("MNGR1") AND project = "Agency Services – Business Unit"
