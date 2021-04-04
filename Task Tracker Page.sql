@@ -1,7 +1,7 @@
 --Open Tasks Due Today (Example for Manager MNGR1)  
 duedate < 1d AND duedate >= 0d AND assignee IN ("MNGR1") AND project = "Agency Services – Business Unit"
 OR
-duedate <= 0d AND assignee IN ("MNGR1") AND status IN ("Open", "In Progress", "Done")
+duedate <= 0d AND assignee IN ("MNGR1") AND status IN ("Open", "In Progress")
 
 
 --Task Due Today (Example for the Employee EMP01)
@@ -40,5 +40,11 @@ duedate < 14d AND duedate >= 7d AND assignee IN ("MNGR1") AND project = "Agency 
 duedate < 14d AND duedate >= 7d AND assignee IN ("EMP01") AND project = "Agency Services – Business Unit"
 
 
+--Tasks Finished Yesterday (Example for Employee EMP01)
+resolutiondate <-1d AND  resolutiondate > -2d  AND assignee IN (EMP01) AND status IN (Done, Blocked)  OR assignee IN (EMP01) AND resolution = Unresolved AND updatedDate < -1d  AND updatedDate > -2d AND status IN (Blocked, Done)                        
+
+
+--Tasks Finished This Week (Example for Employee EMP01)
+duedate > -7d AND duedate < -1d and  assignee IN (EMP01)        
 
  
