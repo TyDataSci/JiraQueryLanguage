@@ -4,8 +4,9 @@ Documentation for advanced queries of the JIRA Query Language to create useful d
 ![Screenshot](blogpics/dashboard.png)
 
 
-![Screenshot](blogpics/OpenPool.png)
 ## Open Task Pool, Due Today
+![Screenshot](blogpics/OpenPool.png)
+
 ```SQL
 duedate < 1d AND duedate >= 0d AND assignee IN ("MNGR1") AND project = "Agency Services – Business Unit"
 ```
